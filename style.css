@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #47a8e5;
+}
+
+.wrapper {
+    width: 680px;
+    background: #fff;
+    border-radius: 25px;
+    padding: 30px 45px 30px;
+}
+
+.wrapper header {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .content {
+    margin: 25px 0;
+}
+
+.wrapper .quote-area {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.quote-area i:first-child {
+    margin: 3px 15px 0 0;
+}
+
+.quote-area i:last-child {
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.quote-area .quote {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 600px;
+    overflow-wrap: break-word;
+}
+
+.content .author {
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.author span:first-child {
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+.wrapper .buttons {
+    border-top: 1px solid #ccc;
+}
+
+.buttons .features {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.features ul {
+    display: flex;
+}
+
+.features ul li {
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    color: #47a8e5;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #47a8e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.features ul li:hover {
+    color: #fff;
+    background: #47a8e5;
+}
+
+.features button {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    background: #47a8e5;
+    transition: all 0.9s ease;
+}
+
+button.loading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        width: 350px;
+    }
+}
