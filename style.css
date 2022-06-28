@@ -122,6 +122,7 @@ body {
 button.loading {
     opacity: 0.5;
     pointer-events: none;
+    /* font-size: large; */
 }
 
 @media screen and (max-width: 480px) {
